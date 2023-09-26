@@ -1,0 +1,24 @@
+﻿  ArithmeticLogicUnit.cpp
+  BranchControler.cpp
+  CircularROB.cpp
+C:\Projects\CPU_simulator\src\CircularROB.cpp(214,39): warning C4018: '<': signed/unsigned mismatch
+C:\Projects\CPU_simulator\src\CircularROB.cpp(218,23): warning C4018: '<': signed/unsigned mismatch
+  CommonDataBus.cpp
+  CPU.cpp
+C:\Projects\CPU_simulator\src\CPU.cpp(50,45): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  CpuSim.cpp
+  DataCache.cpp
+  Instruction.cpp
+  InstructionCache.cpp
+  InstructionUnit.cpp
+C:\Projects\CPU_simulator\src\InstructionUnit.cpp(238,48): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Projects\CPU_simulator\src\InstructionUnit.cpp(248,45): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Program.cpp
+  Register.cpp
+  RegisterFile.cpp
+C:\Projects\CPU_simulator\src\RegisterFile.cpp(12,17): warning C4477: 'sprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Projects\CPU_simulator\src\RegisterFile.cpp(12,17): message : consider using '%zd' in the format string
+C:\Projects\CPU_simulator\src\RegisterFile.cpp(28,24): warning C4267: 'argument': conversion from 'size_t' to 'reg_type', possible loss of data
+  UnsignedIntMath.cpp
+  Generating Code...
+  CPU Simulator.vcxproj -> C:\projects\CPU_simulator\src\CPU Simulator\x64\Debug\CPU Simulator.exe

@@ -1,0 +1,39 @@
+#include <list>
+#include <map>
+std :: list <Register*>* free_list = new std :: list <Register> ();
+std :: map <string, Register*>* allocated_registers = new std :: map <string, Register*> ();
+
+public string rename_register (Register& reg)
+{
+	if (free_list.size () == 0)
+	{
+		return reg.getName ();
+	} else {
+		Register* new_reg = free_list.front ();
+		free_list.pop_front ();
+		string new_name = new_reg->getName ();
+		string rename = new string ("renamed:");
+		rename += reg.getName ();
+		allocated_registers [rename] = new_reg;
+		return rename;
+	}
+}
+
+public void free_register (string name)
+{
+	Register reg = allocated_registers.get (name);
+	allocated_registers.remove (name);
+	free_list.push (reg);
+}
+
+public bool allocate_register (Register& reg)
+{
+	using namespace std;
+	list <Register*>::iterator i = find (free_list->begin(), free_list->end(), (&reg));
+	if (i != free_list.end()) {
+		free_list.remove (i);
+		allocated_registers [reg.getName ()] = &reg;
+		return true;
+	}
+	return false;
+}

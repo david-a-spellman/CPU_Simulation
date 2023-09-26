@@ -1,0 +1,1 @@
+C:\Projects\CPU_simulator\src\CPU Simulator\x64\Debug\CPU Simulator.exe
